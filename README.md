@@ -47,6 +47,7 @@
      - Ubicate en visual con el proyecto abierto
      - Dale click en la barra superior donde esta el boton de play, asegurate de que si este seleccionada la solución llamada personapi_dotnet o otra opción seria presionando F5
      - Automaticamente se abrira una pestaña en el navegador con la pantalla inicial del sistema con la url: http://localhost:5049/
+     
    Opción 2 desde la terminal (cmd):
      - Ubicate en la carpeta raiz del proyecto y ejecuta el comando: dotnet run
      - Abre en el navegador una pestaña y pon esta url: http://localhost:5049/
