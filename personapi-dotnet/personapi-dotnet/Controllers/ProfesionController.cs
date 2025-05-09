@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using personapi_dotnet.Models.Entities;
 using personapi_dotnet.Models.Interfaces;
 
@@ -7,10 +8,12 @@ namespace personapi_dotnet.Controllers
 	public class ProfesionController : Controller
 	{
 		private readonly IProfesionRepository _profesionRepo;
+		private readonly persona_dbContext _context;
 
-		public ProfesionController(IProfesionRepository profesionRepo)
+		public ProfesionController(IProfesionRepository profesionRepo, persona_dbContext context)
 		{
 			_profesionRepo = profesionRepo;
+			_context = context;
 		}
 		[HttpGet]
 		public async Task<IActionResult> Index()
@@ -88,11 +91,14 @@ namespace personapi_dotnet.Controllers
 			var profesion = await _profesionRepo.GetByIdAsync(id);
 			if (profesion != null)
 			{
+				var estudios = _context.Estudios.Where(e => e.IdProf == id);
+				_context.Estudios.RemoveRange(estudios);
 				_profesionRepo.Delete(profesion);
-				await _profesionRepo.SaveAsync();
+				await _context.SaveChangesAsync();
 			}
 			return RedirectToAction(nameof(Index));
 		}
+
 
 	}
 }
