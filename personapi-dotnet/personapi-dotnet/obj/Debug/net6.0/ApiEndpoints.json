@@ -1,0 +1,413 @@
+[
+  {
+    "ContainingType": "personapi_dotnet.Controllers.EstudioRestController",
+    "Method": "GetAll",
+    "RelativePath": "api/EstudioRest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[personapi_dotnet.Models.Entities.Estudio, personapi-dotnet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.EstudioRestController",
+    "Method": "Create",
+    "RelativePath": "api/EstudioRest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "personapi_dotnet.DTOs.EstudioCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.EstudioRestController",
+    "Method": "GetById",
+    "RelativePath": "api/EstudioRest/{ccPer}/{idProf}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ccPer",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idProf",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "personapi_dotnet.Models.Entities.Estudio",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.EstudioRestController",
+    "Method": "Update",
+    "RelativePath": "api/EstudioRest/{ccPer}/{idProf}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ccPer",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idProf",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "personapi_dotnet.DTOs.EstudioCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.EstudioRestController",
+    "Method": "Delete",
+    "RelativePath": "api/EstudioRest/{ccPer}/{idProf}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ccPer",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idProf",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.PersonaRestController",
+    "Method": "GetAll",
+    "RelativePath": "api/PersonaRest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[personapi_dotnet.Models.Entities.Persona, personapi-dotnet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.PersonaRestController",
+    "Method": "Create",
+    "RelativePath": "api/PersonaRest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "persona",
+        "Type": "personapi_dotnet.Models.Entities.Persona",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.PersonaRestController",
+    "Method": "GetById",
+    "RelativePath": "api/PersonaRest/{cc}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cc",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "personapi_dotnet.Models.Entities.Persona",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.PersonaRestController",
+    "Method": "Update",
+    "RelativePath": "api/PersonaRest/{cc}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cc",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "persona",
+        "Type": "personapi_dotnet.Models.Entities.Persona",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.PersonaRestController",
+    "Method": "Delete",
+    "RelativePath": "api/PersonaRest/{cc}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cc",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.ProfesionRestController",
+    "Method": "GetAll",
+    "RelativePath": "api/ProfesionRest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[personapi_dotnet.Models.Entities.Profesion, personapi-dotnet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.ProfesionRestController",
+    "Method": "Create",
+    "RelativePath": "api/ProfesionRest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "profesion",
+        "Type": "personapi_dotnet.Models.Entities.Profesion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.ProfesionRestController",
+    "Method": "GetById",
+    "RelativePath": "api/ProfesionRest/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "personapi_dotnet.Models.Entities.Profesion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.ProfesionRestController",
+    "Method": "Update",
+    "RelativePath": "api/ProfesionRest/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "profesion",
+        "Type": "personapi_dotnet.Models.Entities.Profesion",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.ProfesionRestController",
+    "Method": "Delete",
+    "RelativePath": "api/ProfesionRest/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.TelefonoRestController",
+    "Method": "GetAll",
+    "RelativePath": "api/TelefonoRest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[personapi_dotnet.Models.Entities.Telefono, personapi-dotnet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.TelefonoRestController",
+    "Method": "Create",
+    "RelativePath": "api/TelefonoRest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "telefono",
+        "Type": "personapi_dotnet.Models.Entities.Telefono",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.TelefonoRestController",
+    "Method": "GetById",
+    "RelativePath": "api/TelefonoRest/{num}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "num",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "personapi_dotnet.Models.Entities.Telefono",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.TelefonoRestController",
+    "Method": "Update",
+    "RelativePath": "api/TelefonoRest/{num}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "num",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "telefono",
+        "Type": "personapi_dotnet.Models.Entities.Telefono",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "personapi_dotnet.Controllers.TelefonoRestController",
+    "Method": "Delete",
+    "RelativePath": "api/TelefonoRest/{num}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "num",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
